@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Armensk Flagg</title>
+    </head>
+    <body>
+        <h1> Armenia </h1>
+        <canvas id="armenskflagg" width="600" height="300">
+        </canvas>
+        <script>
+            const canvas = document.getElementById("armenskflagg");
+            const ctx = canvas.getContext("2d");
+
+            function rectangle(bredde, hoyde, fyllType, farge) {
+                ctx.fillStyle = farge;
+                ctx.fillRect(0, 0, bredde, hoyde);
+            }
+            /*
+            function testrectangle() {
+                rectangle(120, 60, "solid", "orange");
+                rectangle(120, 40, "solid", "blue");
+            rectangle(120, 20, "solid", "red");
+            }
+            */
+
+            function tegnArmenskflagg() {
+                rectangle(600, 300, "solid", "orange");
+                rectangle(600, 200, "solid", "blue");
+                rectangle(600, 100, "solid", "red");
+            }
+            tegnArmenskflagg();
+
+           // testrectangle();
+        </script>
+        <h1> Romania </h1>
+    </body>
+</html>
